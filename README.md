@@ -29,7 +29,7 @@ High Sierra and Catalina ship with System Integrity Protection (SIP), also known
 1. Terminal should display a message that SIP was disabled.
 1. From the top menu, select **Restart**.
 1. For Catalina, you will need [Hackintool V3.05](https://github.com/headkaze/Hackintool), go to **tools** menu and select the 'house' icon at the bottom to 'Disable Gatekeeper' and mount the disk in read/write mode.
-
+1. To re-enable SIP protection, repeat steps above but instead type: ```csrutil enable```
 
 ## Step 2: Download the Bootcamp Windows Support Software
 
@@ -54,7 +54,7 @@ In another segment I will show you how to reduce the size of the install.wim to 
 
 1. I used [Win10_1803_English_x64.iso](https://archive.org/details/win-10-1803-english-x-64). The download is slow, but it will complete successfully.
 1. This .iso represents the absolute latest one that can perfectly fit on a 4.7GB DVD-R disc without a hastle. 
-1. You can right click the .iso file and choose "Burn to Disc..." 
+1. In MacOS, you can right click the .iso file and choose "Burn to Disc..." 
 
 ## Step 4: Create the Win10 MS-DOS FAT partition (in MacOS)
 
@@ -134,6 +134,8 @@ The Bootcamp Windows Support Software should be on the Windows 10 installer USB 
 1. Add a **REG_DWORD** labelled ```RMBrightnessControlFlags``` and set it to ```400``` in Hex, or ```1024``` in Decimal.
 1. Reboot, you should now have a slider for brightness control back.
 
+## Step 9: Re-Enable SIP protection
+see Step 1, type: ```csrutil enable```, reboot
 
 # Issues
 
