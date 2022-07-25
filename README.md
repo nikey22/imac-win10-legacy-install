@@ -14,7 +14,7 @@ Apple has released EFI based support for **BootCamp** for 2012+ machines. While 
 * A 2009-2011 iMac running MacOS High Sierra and above (as my base system, I am starting with Catalina 10.5.7 - Dosdude1 patched)
 * A Metal-GPU capable video card, Nvidia or AMD will work (Native or Upgraded) 
 * An 8GB or larger USB drive (only for the BootCamp support software you will need to download)
-* An ISO file containing Windows 10. 
+* An ISO file containing Windows 10. I used [Windows 10 Home Edition](https://archive.org/details/win-10-1803-english-x-64)
 * An functional OEM 8X DL "SuperDrive" slot-loading DVD reader in your iMac 2011.  
 * 45GB+ free disk space for Windows OS.
 
@@ -23,7 +23,7 @@ Apple has released EFI based support for **BootCamp** for 2012+ machines. While 
 High Sierra and Catalina ship with System Integrity Protection (SIP), also known as "rootless" mode. 
 
 1. Restart your Mac.
-1. Hold down Command (⌘)-R and keep it held down until you see an Apple logo & progress bar. This boots you into Recovery mode.
+1. Hold down Command ⌘-R and keep it held down until you see an Apple logo & progress bar. This boots you into Recovery mode.
 1. From the **Utilities** menu, select **Terminal**.
 1. At the prompt type exactly the following and then press Return: ```csrutil disable```
 1. Terminal should display a message that SIP was disabled.
@@ -46,21 +46,21 @@ This download will contain the Windows drivers you will need to run Windows on y
 1. Select your Macs *Desktop* or *Downloads* folder as the destination for the download
 1. The download is 1.35GB, drag it into a USB to use later when we've booted into the newly installed Windows 10 Desktop
 
-## Step 3: Obtain a bootable Windows 10 Legacy DVD iso.
+## Step 3: Obtain a bootable Windows 10 Legacy DVD .iso
 
 Premable:
 The .iso needs to be <4.7GB in total size to fit on the DVD. The .iso images have grown over the years as they incorporate more and more updates. Furthermore, the **install.wim** file must be <4Gb to fit in a FAT partition for copying.
 In another segment I will show you how to reduce the size of the install.wim to only carry the actual version of Windows that you want and therefore adhere to the <4Gb file limitation size of FAT. 
 
 1. I used [Win10_1803_English_x64.iso](https://archive.org/details/win-10-1803-english-x-64). The download is slow, but it will complete successfully.
-1. This .iso represents the absolute latest one that can perfectly fit on a 4.7GB DVD disc without a hastle. 
+1. This .iso represents the absolute latest one that can perfectly fit on a 4.7GB DVD-R disc without a hastle. 
 1. You can right click the .iso file and choose "Burn to Disc..." 
 
 ## Step 4: Create the Win10 MS-DOS FAT partition (in MacOS)
 
-1. Launch Disk Utility; On the Internal drive, under the 'View' drop down, make sure 'Show All Devices' is selected. 
-1. Click the 'Partition' button, and then the '+' sign, adjust the size of the partition you want to dedicate for Windows.
-1. Select "MS-DOS (FAT)" for the Format and name it **win10**, click **Apply**. It will format it under the GUID scheme.
+1. Launch **Disk Utility**; On the **Internal drive**, under the 'View' drop down, make sure 'Show All Devices' is selected. 
+1. Click the **Partition** button, and then the **"+"** sign, adjust the size of the partition you want to dedicate for Windows.
+1. Select **MS-DOS (FAT)** for the Format and name it "win10", click **Apply**. It will format it under the GUID scheme.
 1. Now you have a Windows FAT/GUID partition.
 1. Note: you may get a final partition name of "10" instead of "win10", this is a known bug of Disk Utility, ignore it, the name won't matter.
 
