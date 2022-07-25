@@ -118,12 +118,12 @@ This gets us to a Hybrid MBR which Windows 10 will use to format over to NTFS, a
 These drivers are installed as part of the Bootcamp Windows Support Software and will allow Windows 10 to work with the Mac specific devices: WiFi, Graphics, External Monitors, Webcam, Bluetooth and Audio. 
 The Bootcamp Windows Support Software should be on the Windows 10 installer USB you created earlier.
 
-1. Open Windows Explorer and go to the USB drive
-1. Unless you renamed the folder, open **WindowsSupport** -> **Bootcamp** -> **setup.exe**.
+1. Insert your USB drive 
+1. Open **WindowsSupport** -> **Bootcamp** -> **setup.exe**.
 1. This will install all the required drivers and the bootcamp utility for Windows.
 1. Reboot the system, and get back into Windows.
-1. This is a good time to go into **Windows Update** and allow multiple security and feature installs to bring you up to Version 20H2
-1. Once you have finished installing Windows you should enable SIP again by following the same steps but run ```csrutil enable``` instead.
+1. This is a good time to go into **Windows Update** and allow multiple security and feature installs to bring you up to Version 21H2
+1. You may wish to allow 'other device updates' in Win10, as this will ensure you are using the latest video drivers as well
 
 ## Step 8: Edit the 'Regedit' to allow for brightness control (Upgraded Nvidia _Metal_ video cards)
 
