@@ -3,15 +3,15 @@
 Apple has released EFI based support for **BootCamp** for 2012+ machines. While it is possible to install EFI based OS applications in pre 2011 machines, these are often met with hardware level incompatibilites due to the early nature of EFI implementation in these machines. Here I present a way to install Windows 10 in LEGACY MODE with full compatibilty and reliablility of all native hardware. 
 
 ## Compatibility list:
-* iMac mid-2011 (iMac12,2; iMac12,1)
-* iMac mid-2010 (iMac11,3; iMac11,2)
+* iMac mid-2011 (iMac12,2 & iMac12,1)
+* iMac mid-2010 (iMac11,3 & iMac11,2)
 * iMac late-2009 (iMac11,1)
 
 > **IMPORTANT:** Unplug all external hard drives to avoid accidental erasure. It will be important to keep track of Drives and Partitions throughout this process.
 
 # Requirements
 
-* A mid-2011 iMac (12,1 or 12,2) running MacOS High Sierra and above (as my base system, I am starting with Catalina 10.5.7 - Dosdude1 patched)
+* A 2009-2011 iMac running MacOS High Sierra and above (as my base system, I am starting with Catalina 10.5.7 - Dosdude1 patched)
 * A Metal-GPU capable video card, Nvidia or AMD will work (Native or Upgraded) 
 * An 8GB or larger USB drive (only for the BootCamp support software you will need to download)
 * An ISO file containing Windows 10. 
@@ -28,7 +28,7 @@ High Sierra and Catalina ship with System Integrity Protection (SIP), also known
 1. At the prompt type exactly the following and then press Return: ```csrutil disable```
 1. Terminal should display a message that SIP was disabled.
 1. From the top menu, select **Restart**.
-1. For Catalina, you will need [Hackintool V3.05](https://github.com/headkaze/Hackintool), go to **tools** menu and select the house icon at the bottom to Disable Gatekeeper and mount the disk in read/write mode.
+1. For Catalina, you will need [Hackintool V3.05](https://github.com/headkaze/Hackintool), go to **tools** menu and select the 'house' icon at the bottom to 'Disable Gatekeeper' and mount the disk in read/write mode.
 
 
 ## Step 2: Download the Bootcamp Windows Support Software
@@ -77,7 +77,7 @@ Let's begin:
 * download [gptfdisk](https://sourceforge.net/projects/gptfdisk/) and install it.
 * Open Terminal
 * ```sudo gpt -r -vv show disk0```
-* This will show you the partitions in the disk0, notice how it uses a protected MBR (PMBR).
+* This will show you the partitions in disk0, notice how it uses a protected MBR (PMBR) at sector 0.
 * From this command, we need to verify which index our FAT partition is located in. Do not use Disk Utility for this, it could be misleading.
 * Look for ```GPT part - EBD0A0A2-B9E5-4433-87C0-68B6B72699C7```, this is the GUID pointing to the FAT Windows partition you created.
 * Make note of the **index** that it is connected to. You will need that in the next steps.
@@ -125,9 +125,9 @@ The Bootcamp Windows Support Software should be on the Windows 10 installer USB 
 1. This is a good time to go into **Windows Update** and allow multiple security and feature installs to bring you up to Version 20H2
 1. Once you have finished installing Windows you should enable SIP again by following the same steps but run ```csrutil enable``` instead.
 
-## Step 8: Edit the 'Regedit' to allow for brightness control (Upgraded Nvidia Metal Nvidia Cards)
+## Step 8: Edit the 'Regedit' to allow for brightness control (Upgraded Nvidia _Metal_ video cards)
 
-1. run Registry Editor, **regedit**
+1. run the Registry Editor, **regedit**
 1. navigate to: ```HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video\{8C913496-FBFD-11EC-B8A6-70CD60F31B62}\0002```
 1. Here you will find several entries for your video card (K4100M for example).
 1. Add a **REG_DWORD** labelled ```EnableBrightnessControl``` and set it to ```1```
@@ -137,20 +137,20 @@ The Bootcamp Windows Support Software should be on the Windows 10 installer USB 
 
 # Issues
 
-If you want to install Windows 10 on separate SSD, it can be done. The SSD needs to be part of the SATA chain and not a USB device.
+## Separate SSD for Windows 10 
+If you want to install Windows 10 on separate SSD, it can be done. The SSD needs to be part of the SATA chain and not a USB device. 
 You will need to creat an MS-DOS FAT, GUID formatting as we did with our partitioned drive; You will need to also transform the PMBR to Hybrid MBR.
 The rest of the procedure is similar.
 
+## Mid-2011 black screen after Win logo:
+For unknown reasons, occasionally the windows bootup is prolonged significantly by a black screen prior to the Win10 Login screen. It is possible that it is doing an update as we are transitioning from 1803 to 21H1. I have not had recurrent issues with this once fully updated to 21H1.
 
-
-## Mid-2011 Black Screen Boot after Logo:
-
-For unknown reasons as of yet, sometimes the bootup is prolonged significantly by a long >5minute black screen before the Win10 Login screen appears. It is possible that it doing an update as we are transitioning from 1803 to 21H1.
+## Opencore (OCLP):
+Opencore does not yet allow for MBR or Hybrid-MBR bootup recognition as far as I know. You will need to subload the REFInd manager from within Opencore to finally see the Windows icon and load it. I use an SD card with Opencore on it to achieve this.
 
 
 # Sources & Acknowledgements
 
 * [Oznu, How to install windows 10 EFI on imac 2011](https://gist.github.com/oznu/8796d08d73315483c3b26e79a8e3d350)
 * [Dual Booting on an iMac 27" Mid 2011](https://gist.githubusercontent.com/balupton/1603bb4b7769d1af0fd7/raw/README.md)
-* [Enable Bootcamp to install from usb for OSX ](https://discussions.apple.com/message/24235831#24235831)
-* [Windows detects GPT disk as MBR in EFI boot](http://superuser.com/questions/508026/windows-detects-gpt-disk-as-mbr-in-efi-boot)
+* [Repair Bootcamp partition boot entry missing after disk resize](https://www.amirootyet.com/post/repair-bootcamp-partition-boot-entry/)
