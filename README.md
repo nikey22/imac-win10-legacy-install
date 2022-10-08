@@ -78,7 +78,7 @@ Let's begin:
 * Open Terminal
 * ```sudo gpt -r -vv show disk0```
 * This will show you the partitions in disk0, notice how it uses a protected MBR (PMBR) at sector 0.
-![alt text](https://github.com/nikey22/imac-win10-legacy-install/images/GPT-r-vv_show_disk0.png?raw=true)
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/GPT-r-vv_show_disk0.png)
 * From this command, we need to verify which index our FAT partition is located in. Do not use Disk Utility for this, it could be misleading.
 * Look for ```GPT part - EBD0A0A2-B9E5-4433-87C0-68B6B72699C7```, this is the GUID pointing to the FAT Windows partition you created.
 * Make note of the **index** that it is connected to. You will need that in the next steps.
