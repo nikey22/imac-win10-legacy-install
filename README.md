@@ -82,10 +82,11 @@ Let's begin:
 * From this command, we need to verify which index our FAT partition is located in. Do not use Disk Utility for this, it could be misleading.
 * Look for ```GPT part - EBD0A0A2-B9E5-4433-87C0-68B6B72699C7```, this is the GUID pointing to the FAT Windows partition you created.
 * Make note of the **index** that it is connected to. You will need that in the next steps.
-* ```sudo gdisk /dev/disk0```  
+* ```sudo gdisk /dev/disk0```
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/sudo_gdisk_dev_disk0_protective.png)
 * type ```r```  
 * type ```h```  
-* type ```5``` (or whatever index your FAT partition was created it)  
+* type ```3``` (or whatever index your FAT partition was created it)  
 * "Place EFI GPT (0xEE) partition first in MBR (good for GRUB)?" type ```y```  
 * "accept default code of 07" accept this press ```return```  
 * "set bootable flag?" type ```y```  
@@ -93,9 +94,10 @@ Let's begin:
 * type ```o``` ; This will view your new assignments  
 * type ```w``` ; This is write or comit our changes 
 * proceed? type ```y```
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/sudo_gdisk_dev_disk0_proceed.png)
 
-This gets us to a Hybrid MBR which Windows 10 will use to format over to NTFS, and finally install windows 10 in.
-
+This gets us to a Hybrid MBR (see below) which Windows 10 will use to format over to NTFS, and finally install windows 10 in.
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/sudo_gdisk_dev_disk0_hybrid.png)
 
 ## Step 6: Install Windows 10 Legacy using the DVD ROM Drive:
 
