@@ -41,9 +41,8 @@ This download will contain the Windows drivers you will need to run Windows on y
    "Create a Windows 7 or later version install disk"
    "Download the latest Windows support software from Apple"
    "Install Windows 7 or later version"
-
-1. Unclick these options; We will not use them
-1. Instead, from the **Actions** menu select **Download Windows Support Software**
+1. Unclick these options; We will not use them  
+1. 3. Instead, from the **Actions** menu select **Download Windows Support Software**
 1. Select your Macs *Desktop* or *Downloads* folder as the destination for the download
 1. Press *Quit* once you are done. The download is 1.35GB, drag it to a USB drive to use later when we've booted into the newly installed Win10 Desktop
 
