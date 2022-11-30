@@ -61,6 +61,7 @@ In another segment I will show you how to reduce the size of the install.wim to 
 1. Launch **Disk Utility**; On the **Internal drive**, under the 'View' drop down, make sure 'Show All Devices' is selected. 
 1. Click the **Partition** button, and then the **"+"** sign, adjust the size of the partition you want to dedicate for Windows.
 1. Select **MS-DOS (FAT)** for the Format and name it "win10", click **Apply**. It will format it under the GUID scheme.
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/diskutility-FAT-win10.png)
 1. Now you have a Windows FAT/GUID partition.
 1. Note: you may get a final partition name of "10" instead of "win10", this is a known bug of Disk Utility, ignore it, the name won't matter.
 
