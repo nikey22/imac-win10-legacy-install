@@ -142,6 +142,7 @@ The Bootcamp Windows Support Software should be on the Windows 10 installer USB 
 1. Right click, Add a **REG_DWORD** labelled ```RMBrightnessControlFlags``` and set it to ```400``` in Hex, or ```1024``` in Decimal.
 ![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/K4100M_brightness_control_registry_entries_win10Legacy.png)
 3. Reboot, you should now have a slider for brightness control back.
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/K4100M_brightness_control_win10Legacy.PNG)
 
 ## Step 9: Re-Enable SIP protection
 see Step 1, type: ```csrutil enable```, reboot
