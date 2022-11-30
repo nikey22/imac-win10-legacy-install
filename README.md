@@ -89,8 +89,8 @@ Let's begin:
 * type ```h```  
 * type ```3``` (or whatever index your FAT partition was created it)  
 * "Place EFI GPT (0xEE) partition first in MBR (good for GRUB)?" type ```y```  
-* "accept default code of 07" accept this press ```return```  
-* "set bootable flag?" type ```y```  
+* "Enter an MBR hex code (default 07):" ```return```  
+* "set bootable flag? (Y/N)" type ```y```  
 * "do not protect more partitions?" type ```n```  
 * type ```o``` ; This will view your new assignments  
 * type ```w``` ; This is write or comit our changes 
