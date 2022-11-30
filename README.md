@@ -147,6 +147,9 @@ The Bootcamp Windows Support Software should be on the Windows 10 installer USB 
 ## Step 9: Re-Enable SIP protection
 see Step 1, type: ```csrutil enable```, reboot
 
+## Step 10: Verify "Legacy" Installation
+1. run msinfo32 via the Windows panel, you should see verification of your install:
+
 # Issues
 
 ## Separate SSD for Windows 10 
