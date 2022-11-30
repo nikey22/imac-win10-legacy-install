@@ -1,4 +1,4 @@
-# How to Install Windows 10 Legacy on a mid-2011 iMac
+# How to Install Windows 10 Legacy on a 2009/2010/2011 iMac
 
 Apple has released EFI based support for **BootCamp** for 2012+ machines. While it is possible to install EFI based OS applications in pre 2011 machines, these are often met with hardware level incompatibilites due to the early nature of EFI implementation in these machines. Here I present a way to install Windows 10 in LEGACY MODE with full compatibilty and reliablility of all native hardware. 
 
