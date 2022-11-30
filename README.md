@@ -136,6 +136,7 @@ The Bootcamp Windows Support Software should be on the Windows 10 installer USB 
 
 1. run the Registry Editor, **regedit**
 1. navigate to: ```HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video\{8C913496-FBFD-11EC-B8A6-70CD60F31B62}\0002```
+1. The UUID identifier may be different for your video card. Just check each entry for the "HardwareInformation.AdapterString" that matches your hardware.
 1. Here you will find several entries for your video card (K4100M for example).
 1. Add a **REG_DWORD** labelled ```EnableBrightnessControl``` and set it to ```1```
 1. Add a **REG_DWORD** labelled ```RMBrightnessControlFlags``` and set it to ```400``` in Hex, or ```1024``` in Decimal.
