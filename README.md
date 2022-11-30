@@ -22,6 +22,7 @@ Apple has released EFI based support for **BootCamp** for 2012+ machines. While 
 
 High Sierra and Catalina ship with System Integrity Protection (SIP), also known as "rootless" mode. 
 
+1. Check to see if you have it enabled: ```csrtuil status```. If already disabled skip Step 1.
 1. Restart your Mac.
 1. Hold down Command ⌘-R and keep it held down until you see an Apple logo & progress bar. This boots you into Recovery mode.
 1. From the **Utilities** menu, select **Terminal**.
