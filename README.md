@@ -150,7 +150,7 @@ You will need to create an MS-DOS FAT, GUID formatting as we did with our partit
 The rest of the procedure is similar.
 
 ## Mid-2011 black screen after Win logo:
-For unknown reasons, occasionally the windows bootup is prolonged significantly by a black screen prior to the Win10 Login screen. It is possible that it is doing an update as we are transitioning from 1803 to 21H1. I have not had recurrent issues with this once fully updated to 21H1.
+For unknown reasons, occasionally the windows bootup is prolonged significantly by a black screen prior to the Win10 Login screen. It is possible that it is doing an update as we are transitioning from 1803 to 21H1. I have not had recurrent issues with this once fully updated to 21H1.  
 11/30/2022 - no black screen issues and no login delays.
 
 ## Opencore (OCLP):
