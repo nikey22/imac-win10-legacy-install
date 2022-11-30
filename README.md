@@ -64,7 +64,7 @@ In another segment I will show you how to reduce the size of the install.wim to 
 1. Now you have a Windows FAT/GUID partition.
 1. Note: you may get a final partition name of "10" instead of "win10", this is a known bug of Disk Utility, ignore it, the name won't matter.
 
-## Step 5: Create the Hybrid MBR
+## Step 5: Create the Hybrid MBR (in MacOS)
 
 Premable:
 A conventional GPT disk contains a protective MBR with a single partition, of type 0xEE (EFI GPT). This can span the entire size of the disk. Our Legacy Windows 10 will not install on a GPT formated partition. In operating systems that support GPT-based boot through BIOS services rather than EFI, the first sector may also still be used to store the first stage of the bootloader code, but modified to recognize GPT partitions. 
@@ -117,7 +117,7 @@ This gets us to a Hybrid MBR (see below) which Windows 10 will use to format ove
 1. This time, ignore: "Press any key to boot from CD or DVD....." since you want to continue the installation from the hard disk now.
 1. Finish installing Windows until you get to the desktop.
 
-## Step 7: Install the Bootcamp Windows Support Software
+## Step 7: Install the Bootcamp Windows Support Software (in Bootcamp Windows 10)
 
 These drivers are installed as part of the Bootcamp Windows Support Software and will allow Windows 10 to work with the Mac specific devices: WiFi, Graphics, External Monitors, Webcam, Bluetooth and Audio. 
 The Bootcamp Windows Support Software should be on the Windows 10 installer USB you created earlier.
