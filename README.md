@@ -153,7 +153,7 @@ The rest of the procedure is similar.
 
 ## Mid-2011 black screen after Win logo:
 For unknown reasons, occasionally the windows bootup is prolonged significantly by a black screen prior to the Win10 Login screen. It is possible that it is doing an update as we are transitioning from 1803 to 21H1. I have not had recurrent issues with this once fully updated to 21H1.  
-11/30/2022 - no black screen issues and no login delays.
+**update** 11/30/2022 - no black screen issues and no login delays on any video cards tested to date.
 
 ## Opencore (OCLP):
 Opencore does not yet allow for MBR or Hybrid-MBR bootup recognition as far as I know. You will need to subload the REFInd manager from within Opencore to finally see the Windows icon and load it. I use an SD card with Opencore on it to achieve this.
