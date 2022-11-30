@@ -7,7 +7,7 @@ Apple has released EFI based support for **BootCamp** for 2012+ machines. While 
 * iMac mid-2010 (iMac11,3 & iMac11,2)
 * iMac late-2009 (iMac11,1)
 
-> **IMPORTANT:** Unplug all external hard drives to avoid accidental erasure. It will be important to keep track of Drives and Partitions throughout this process.
+> **IMPORTANT:** Unplug all external hard drives to avoid accidental erasure. It will be important to keep track of Drives and Partitions throughout this process. Please note this process involves partition rewrites to the main disk and could potentially cause corruption; Please make a backup. I take no responsibility for accidental erasure. 
 
 # Requirements
 
