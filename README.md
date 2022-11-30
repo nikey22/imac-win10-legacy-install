@@ -132,14 +132,14 @@ The Bootcamp Windows Support Software should be on the Windows 10 installer USB 
 1. This is a good time to go into **Windows Update** and allow multiple security and feature installs to bring you up to Version 21H2
 1. You may wish to allow 'other device updates' in Win10, as this will ensure you are using the latest video drivers as well
 
-## Step 8: Edit the 'Regedit' to allow for brightness control (Upgraded Nvidia _Metal_ video cards)
+## Step 8: 'Regedit' patches to allow for brightness control (Upgraded Nvidia _Metal_ video cards)
 
 1. run the Registry Editor, **regedit**
 1. navigate to: ```HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video\{8C913496-FBFD-11EC-B8A6-70CD60F31B62}\0002```
 1. The UUID identifier may be different for your video card. Just check each entry for the "HardwareInformation.AdapterString" that matches your hardware.
-1. Here you will find several entries for your video card (K4100M for example).
-1. Add a **REG_DWORD** labelled ```EnableBrightnessControl``` and set it to ```1```
-1. Add a **REG_DWORD** labelled ```RMBrightnessControlFlags``` and set it to ```400``` in Hex, or ```1024``` in Decimal.
+1. The entries will be clustered in groups of 4 numbers, eg: 0000, 0001, 0002, 0003, 0004.
+1. Right click, Add a **REG_DWORD** labelled ```EnableBrightnessControl``` and set it to ```1```
+1. Right click, Add a **REG_DWORD** labelled ```RMBrightnessControlFlags``` and set it to ```400``` in Hex, or ```1024``` in Decimal.
 1. Reboot, you should now have a slider for brightness control back.
 
 ## Step 9: Re-Enable SIP protection
