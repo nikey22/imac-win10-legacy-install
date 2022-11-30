@@ -148,7 +148,7 @@ The Bootcamp Windows Support Software should be on the Windows 10 installer USB 
 see Step 1, type: ```csrutil enable```, reboot
 
 ## Step 10: Verify "Legacy" Installation
-1. run msinfo32 via the Windows panel, you should see verification of your install:
+1. run **msinfo32** via the Windows panel, you should see verification of your install:
 ![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/msinfo32_bootmode_win10Legacy.PNG)
 
 # Issues
