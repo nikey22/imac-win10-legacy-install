@@ -103,7 +103,7 @@ This gets us to a Hybrid MBR (see below) which Windows 10 will use to format ove
 ## Step 6: Install Windows 10 Legacy using the DVD ROM Drive:
 
 1. Reboot your Mac with the bootable Windows 10 Installer DVD inserted in the SuperDrive.
-1. Press and hold down the **Option** until you see the boot selection options.
+1. Press and hold down the **Option (⌥ alt)** until you see the boot selection options.
 1. You should see an option with 2 DVD icons, one is a **Windows** and the other is **EFI Boot**, choose the "Windows" one.
 ![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/mac-boot-options.jpg)
 1. The Windows 10 installation will now start, follow the steps, selecting **Custom Installation**.
@@ -116,7 +116,7 @@ This gets us to a Hybrid MBR (see below) which Windows 10 will use to format ove
 1. You will see an exclamation point warning that "Windows can't be installed on drive 0 partition 2. (Show details)". This is expected because remember, so far, you only have a FAT-32 partition there.
 1. Select **Format** (The installer will format it to NTFS); The installation should start
 1. The error message is now cleared and the **Next** button will be lit up. Press it.
-1. Windows will restart 4 or so times during installation. Be ready to hold down the **Options** / **Alt** key after each reboot, but instead of selecting the DVD device named "Windows" select the newly created hard disk labelled "Windows" instead to ensure the installation continues 
+1. Windows will restart 4 or so times during installation. Be ready to hold down the **Option (⌥ alt)** key after each reboot, but instead of selecting the DVD device named "Windows" select the newly created hard disk labelled "Windows" instead to ensure the installation continues 
 1. This time, ignore: "Press any key to boot from CD or DVD....." since you want to continue the installation from the hard disk now.
 1. Finish installing Windows until you get to the desktop.
 
