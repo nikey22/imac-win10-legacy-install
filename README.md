@@ -105,6 +105,7 @@ This gets us to a Hybrid MBR (see below) which Windows 10 will use to format ove
 1. Reboot your Mac with the bootable Windows 10 Installer DVD inserted in the SuperDrive.
 1. Press and hold down the **Option** until you see the boot selection options.
 1. You should see an option with 2 DVD icons, one is a **Windows** and the other is **EFI Boot**, choose the "Windows" one.
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/mac-boot-options.jpg)
 1. The Windows 10 installation will now start, follow the steps, selecting **Custom Installation**.
 1. "Press any key to boot from CD or DVD....." make sure to press a key!
 1. At the "Windows Setup" screen select **Next**, then **Install now**
