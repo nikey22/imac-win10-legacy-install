@@ -135,12 +135,13 @@ The Bootcamp Windows Support Software should be on the Windows 10 installer USB 
 ## Step 8: 'Regedit' patches to allow for brightness control (Upgraded Nvidia _Metal_ video cards)
 
 1. run the Registry Editor, **regedit**
-1. navigate to: ```HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video\{8C913496-FBFD-11EC-B8A6-70CD60F31B62}\0002```
+1. navigate to: ```HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video\{**UUID**}\0002```
 1. The UUID identifier may be different for your video card. Just check each entry for the "HardwareInformation.AdapterString" that matches your hardware.
 1. The entries will be clustered in groups of 4 numbers, eg: 0000, 0001, 0002, 0003, 0004.
 1. Right click, Add a **REG_DWORD** labelled ```EnableBrightnessControl``` and set it to ```1```
 1. Right click, Add a **REG_DWORD** labelled ```RMBrightnessControlFlags``` and set it to ```400``` in Hex, or ```1024``` in Decimal.
-1. Reboot, you should now have a slider for brightness control back.
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/K4100M_brightness_control_registry_entries_win10Legacy.png)
+3. Reboot, you should now have a slider for brightness control back.
 
 ## Step 9: Re-Enable SIP protection
 see Step 1, type: ```csrutil enable```, reboot
