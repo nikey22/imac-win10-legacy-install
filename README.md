@@ -110,10 +110,10 @@ This gets us to a Hybrid MBR (see below) which Windows 10 will use to format ove
 1. "Press any key to boot from CD or DVD....." make sure to press a key!
 1. At the *"Windows Setup"* screen select **Next**, then **Install now**
 1. Put in your product code or select *"I don't have a product key"*
-1. Select the version of Windows you want to install, I selected "Windows 10 Home"
-1. Select "Custom: Install Windows only (advanced)"
+1. Select the version of Windows you want to install, I selected *"Windows 10 Home"*
+1. Select **Custom: Install Windows only (advanced)**
 1. On the screen where you select your partition be careful, and ensure you select the "win10" partition you created earlier before proceeding with installation.
-1. You will see an exclamation point warning that "Windows can't be installed on drive 0 partition 2. (Show details)". This is expected because remember, so far, you only have a FAT-32 partition there.
+1. You will see an exclamation point warning that "**! Windows can't be installed on drive 0 partition 2. (Show details)**". This is expected because remember, so far, you only have a FAT-32 partition there.
 1. Select **Format** (The installer will format it to NTFS); The installation should start
 1. The error message is now cleared and the **Next** button will be lit up. Press it.
 1. Windows will restart 4 or so times during installation. Be ready to hold down the **Option (⌥ alt)** key after each reboot, but instead of selecting the DVD device named "Windows" select the newly created hard disk labelled "Windows" instead to ensure the installation continues 
