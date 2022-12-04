@@ -108,8 +108,8 @@ This gets us to a Hybrid MBR (see below) which Windows 10 will use to format ove
 ![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/mac-boot-options.jpg)
 1. The Windows 10 installation will now start, follow the steps, selecting **Custom Installation**.
 1. "Press any key to boot from CD or DVD....." make sure to press a key!
-1. At the "Windows Setup" screen select **Next**, then **Install now**
-1. Put in your product code or select "I don't have a product key"
+1. At the * *"Windows Setup"* * screen select **Next**, then **Install now**
+1. Put in your product code or select * *"I don't have a product key"* *
 1. Select the version of Windows you want to install, I selected "Windows 10 Home"
 1. Select "Custom: Install Windows only (advanced)"
 1. On the screen where you select your partition be careful, and ensure you select the "win10" partition you created earlier before proceeding with installation.
