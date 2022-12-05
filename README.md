@@ -116,7 +116,7 @@ This gets us to a Hybrid MBR (see below) which Windows 10 will use to format ove
 1. You will see a warning: "**⚠ Windows can't be installed on drive 0 partition 2. (Show details)**". This is expected because up to this point, you only have a FAT-32 partition present.
 1. Select **Format**, and the installer will format the partition to NTFS file system.
 1. The error message is now cleared and the **Next** button will be highlighted. Press it.
-1. Windows will restart ~4 times during installation. Be ready to hold down the **Option (⌥ alt)** key after each reboot, but instead of selecting the DVD device named "Windows" select the newly created Hard Disk labelled "Windows" instead to ensure the installation continues 
+1. Windows will restart ~4 times during installation. Be ready to hold down the **Option (⌥ alt)** key after each reboot, but instead of selecting the DVD device 📀 named "Windows" select the newly created Hard Disk 🖴  named "Windows" instead to ensure the installation continues 
 1. This time, ignore: "Press any key to boot from CD or DVD....." since you want to continue the installation from within the hard disk now.
 1. Finish installing Windows until you get to the desktop.
 
