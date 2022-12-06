@@ -37,12 +37,10 @@ High Sierra and Catalina ship with System Integrity Protection (SIP), also known
 This download will contain the Windows drivers you will need to run Windows on your Mac. Allow the computer to do this for you via the **Boot Camp Assistant application**:
 
 1. Open **Boot Camp Assistant** from Applications -> Utilities
-1. Click continue at the introduction, you may see 2 or 3 options: 
-   "Create a Windows 7 or later version install disk"
-   "Download the latest Windows support software from Apple"
-   "Install Windows 7 or later version"
-1. Unclick these options; We will not use them  
-1. Instead, from the **Actions** menu select **Download Windows Support Software**
+1. Click **continue** at the introduction, you may see 2 or 3 options, unclick these options, we will not use them:
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/bootcamp_support_download0.png)
+1. Instead, from the **Action** menu select **Download Windows Support Software**
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/bootcamp_support_download1.png)
 1. Select your Macs *Desktop* or *Downloads* folder as the destination for the download
 1. Press *Quit* once you are done. The download is 1.35GB, drag it to a USB drive to use later when we've booted into the newly installed Win10 Desktop
 
