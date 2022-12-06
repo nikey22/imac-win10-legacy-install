@@ -1,6 +1,6 @@
 # How to Install Windows 10 Legacy on a 2009-2011 iMac
 <img align="left" width="100" height="100" src="https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/macos-bootcamp-assistant-icon.png"> 
-Apple has released EFI based support for **BootCamp** for 2012+ machines. While it is possible to install EFI based OS applications in pre 2011 machines, these are often met with hardware level incompatibilites due to the early nature of EFI implementation in these machines. Here I present a way to install Windows 10 in LEGACY MODE with full compatibilty and reliablility of all native hardware and upgraded video cards. 
+Apple has released UEFI based support for BootCamp for 2012+ machines. While it is possible to install UEFI Windows 10 OS in pre 2011 machines, these scenarios are often met with hardware level incompatibilites due mainly to the early nature of EFI implementation in these machines. Here I present a way to install Windows 10 OS in LEGACY mode with full compatibilty and reliablility of all native hardware and upgraded Nvidia and AMD video cards. 
 &nbsp;
 
 ## Compatibility list:
