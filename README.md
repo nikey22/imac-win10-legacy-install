@@ -122,7 +122,7 @@ This gets us to a Hybrid MBR (see below) which Windows 10 will use to format ove
 1. This time, ignore: "Press any key to boot from CD or DVD....." since you want to continue the installation from within the hard disk now.
 1. Finish installing Windows until you get to the desktop.
 
-## Step 7: Install the Bootcamp Windows Support Software (in Bootcamp Windows 10)
+## Step 7: Install 'Bootcamp Windows Support Software' (in Windows 10)
 
 These drivers are installed as part of the Bootcamp Windows Support Software and will allow Windows 10 to work with the Mac specific devices: WiFi, Graphics, External Monitors, Webcam, Bluetooth and Audio. 
 The Bootcamp Windows Support Software should be on the Windows 10 installer USB you created earlier.
