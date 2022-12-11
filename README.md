@@ -111,10 +111,13 @@ This gets us to a Hybrid MBR (see below) which Windows 10 will use to format ove
 1. Put in your product code or select *"I don't have a product key"*
 1. Select the version of Windows you want to install, I selected *"Windows 10 Home"*
 1. Select **Custom: Install Windows only (advanced)**
-1. On the screen where you select your partition be careful, and ensure you select the "win10" partition you created earlier before proceeding with installation.
+1. Select your partition but be careful, and ensure you select the "win10" ("W10") partition created earlier before proceeding:    
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/win10_partition2_fat.JPG)
 1. You will see a warning: "**⚠ Windows can't be installed on drive 0 partition 2. (Show details)**". This is expected because up to this point, you only have a FAT-32 partition present.
-1. Select **Format**, and the installer will format the partition to NTFS file system.
-1. The error message is now cleared and the **Next** button will be highlighted. Press it.
+1. Select **Format**, and the installer will format the partition to NTFS file system:
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/win10_partition_NTFS.JPG)
+1. The error message is now cleared and the **Next** button will now be highlighted. Press it:
+![image](https://github.com/nikey22/imac-win10-legacy-install/blob/main/images/win10_installing.JPG)
 1. Windows will restart ~4 times during installation. Be ready to hold down the **Option (⌥ alt)** key after each reboot, but instead of selecting the DVD device 📀 named "Windows" select the newly created Hard Disk 🖴  named "Windows" instead to ensure the installation continues 
 1. This time, ignore: "Press any key to boot from CD or DVD....." since you want to continue the installation from within the hard disk now.
 1. Finish installing Windows until you get to the desktop.
