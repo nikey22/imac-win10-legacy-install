@@ -161,7 +161,7 @@ You will need to create an MS-DOS FAT, GUID formatting as we did with our partit
 The rest of the procedure is similar.
 
 ## Opencore (OCLP):
-Opencore does not yet allow for MBR or Hybrid-MBR bootup recognition as far as I know. You will need to subload the REFInd manager from within Opencore to finally see the Windows icon and load it. I use an SD card with Opencore on it to achieve this.
+Opencore does not yet allow for MBR or Hybrid-MBR bootup recognition as far as I know. If you are using OpenCore (>Catalina OS), you will need to subload the REFInd manager from within Opencore to finally see the Windows icon and load it. I use an SD card with Opencore on it to achieve this for my computers that have higher than Catalina Os installs.
 
 
 # Sources & Acknowledgements
